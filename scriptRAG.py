@@ -1,8 +1,10 @@
 import os
 from langchain_community.vectorstores.pgvector import PGVector
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.llms import Ollama
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.document_loaders import PyPDFLoader
+
 
 # Connexion PostgreSQL
 CONNECTION_STRING = "postgresql+psycopg2://postgres:@localhost:5432/documents"
