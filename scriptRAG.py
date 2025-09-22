@@ -11,7 +11,7 @@ CONNECTION_STRING = "postgresql+psycopg2://postgres:@localhost:5432/documents"
 COLLECTION_NAME = "documents"
 
 # Initialisation
-embeddings = OpenAIEmbeddings()
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 
 # Récupération des fichiers PDF
