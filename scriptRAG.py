@@ -5,7 +5,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader
 
 # Connexion PostgreSQL
-CONNECTION_STRING = "postgresql+psycopg2://user:password@localhost:5432/ma_base"
+CONNECTION_STRING = "postgresql+psycopg2://postgres:@localhost:5432/documents"
 COLLECTION_NAME = "documents"
 
 # Initialisation
