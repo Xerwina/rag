@@ -7,7 +7,7 @@ from langchain.text_splitter import CharacterTextSplitter
 
 
 # Connexion PostgreSQL
-CONNECTION_STRING = "postgresql+psycopg2://postgres:@localhost:5432/documents"
+CONNECTION_STRING = "postgresql+psycopg2://postgres:Admin123$@localhost:5432/documents"
 COLLECTION_NAME = "documents"
 
 # Initialisation
