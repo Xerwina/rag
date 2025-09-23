@@ -7,7 +7,7 @@ from langchain.text_splitter import CharacterTextSplitter
 
 
 # Connexion PostgreSQL
-CONNECTION_STRING = "postgresql+psycopg2://postgres:Admin123$@localhost:5432/documents"
+CONNECTION_STRING = "postgresql+psycopg2://postgres:Admin123$@localhost:5432/rag"
 COLLECTION_NAME = "documents"
 
 # Initialisation
@@ -38,3 +38,4 @@ if all_docs:
     print(f"{len(all_docs)} chunks issus des PDF ont été insérés dans la base vectorielle PostgreSQL.")
 else:
     print("Aucun fichier PDF trouvé dans le dossier courant.")
+
